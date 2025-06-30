@@ -1,6 +1,6 @@
 ---
 layout: listing
-title: About Redeemer	
+title: Preschool	
 subtitle: Redeemer subtitle
 gh-repo: daattali/beautiful-jekyll
 gh-badge: [star, fork, follow]
