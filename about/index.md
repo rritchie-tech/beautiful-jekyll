@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: listing
 title: About Redeemer	
 subtitle: Redeemer subtitle
 gh-repo: daattali/beautiful-jekyll
