@@ -86,9 +86,9 @@
 			  <i class="fa fa-caret-down"></i>
 			</button>
 			<div class="dropdown-content">
-				{% for item in site.pages %}
-		  			{% if item.dir == page.dir and item.path != page.path %}
-						<a href="item.title">item.title</a>
+				{% for item2 in site.pages %}
+		  			{% if item2.dir == page.dir and item2.path != page.path %}
+						<a href="item2.title">item2.title</a>
 					<% endif %}}
 				{% endfor %}
 			</div>		  
