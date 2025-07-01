@@ -1,6 +1,6 @@
 ---
 layout: listing
-title: About Redeemer	
+title: About Redeemer	Redo
 subtitle: Redeemer subtitle
 level: 2
 gh-repo: daattali/beautiful-jekyll
