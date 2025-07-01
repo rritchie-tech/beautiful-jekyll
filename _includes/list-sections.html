@@ -82,7 +82,7 @@
 		{% assign item_crumbs = item.url | remove_first: page.dir | split: '/' %}
 		{% if item_crumbs.size == 1 and item.name == 'index.md' %}
 		<div class="dropdown">
-			<button class="dropbtn">{{ item.name }}
+			<button class="dropbtn">{{ item.title }}
 			  <i class="fa fa-caret-down"></i>
 			</button>
 		</div>
