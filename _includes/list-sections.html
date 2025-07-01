@@ -78,16 +78,16 @@
 }
 </style>
 <div class="navbar">
-	<div class="dropdown">
 	{% for item in site.pages %}
-        {% assign item_crumbs = item.url | remove_first: page.dir | split: '/' %}
-
-        {% if item_crumbs.size == 1 and item.name == 'index.md' %}
-            <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
-        {% endif %}
-    {% endfor %}
-	
-	</div>
+		{% assign item_crumbs = item.url | remove_first: page.dir | split: '/' %}
+		{% if item_crumbs.size == 1 and item.name == 'index.md' %}
+		<div class="dropdown">
+			<button class="dropbtn">"{{ item.url | relative_url }}">{{ item.title }}
+			  <i class="fa fa-caret-down"></i>
+			</button>
+		</div>
+		{% endif %}
+	{% endfor %}
 </div>	
 <ul>
     
