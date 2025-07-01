@@ -2,6 +2,7 @@
 layout: listing
 title: About Redeemer	
 subtitle: Redeemer subtitle
+level: 2
 gh-repo: daattali/beautiful-jekyll
 gh-badge: [star, fork, follow]
 tags: [test]
