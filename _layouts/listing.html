@@ -1,15 +1,94 @@
----
-layout: page
----
+{% comment %}
+    List directories which are in the current directory.
+    
+    The logic is: after removing the **common** part of the item's path,
+    we use an item if goes exactly **one** level down i.e. direct descendants.
+    Unfortunately Jekyll doesn't have a concept of directories, just pages in site.pages,
+    so here we use the presence of index.md to indicate that is the index of a directory.
+    This also makes sense to use this approach because Jekyll needs to actually have an HTML page
+    to reference as the directory menu.
+    Just make sure you have index.md in each directory and that it uses the listing layout.
+{% endcomment %}
+<style>
+ body {
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-{{ content }}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
 
-<h2>Menu Test (Did it show up?)</h2>
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
 
-<h3>Pages</h3>
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
 
-{% include list-pages.html %}
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
 
-<h3>Sections</h3>
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
 
-{% include list-sections.html %}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  position: fixed;
+  display: block;
+  background-color: blue;
+  z-index: 0;
+}
+</style>
+<div class="navbar">
+	<div class="dropdown">
+	{% for item in site.pages %}
+        {% assign item_crumbs = item.url | remove_first: page.dir | split: '/' %}
+
+        {% if item_crumbs.size == 1 and item.name == 'index.md' %}
+            <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+        {% endif %}
+    {% endfor %}
+	
+	</div>
+</div>	
+<ul>
+    
+</ul>
