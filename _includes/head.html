@@ -43,7 +43,7 @@
   {% if author != "" %}
   <meta name="author" content="{{ author }}">
   {% endif %}
-
+  
   <meta name="description" content="{{ description }}">
 
   {% if site.mobile-theme-col %}
@@ -80,6 +80,8 @@
     {% for css in site.site-css %}
       <link rel="stylesheet" href="{{ css | relative_url }}">
     {% endfor %}
+  {% else %}
+      <link rel="stylesheet" href="/assets/css/custom-styles.css">
   {% endif %}
 
   {% if page.ext-css %}
@@ -99,7 +101,7 @@
   {% endif %}
 
   {% if site.title %}
-  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:site_name" content="{{ site.title }}here">
   {% endif %}
 
   {%- capture img -%}
@@ -159,11 +161,12 @@
 
   {% if page.comments and site.staticman.repository and site.staticman.branch %}
   <link rel="stylesheet" href="{{ "/assets/css/staticman.css" | relative_url }}">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
   {% endif %}
 
   {% assign favicon_exists = site.static_files | where: "path", "/favicon.ico" | size %}
   {% if favicon_exists == 1 %}
-  <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" />
+ 
   {% endif %}
 
   {% if page.head-extra %}
@@ -171,5 +174,5 @@
       {% include {{ file }} %}
     {% endfor %}
   {% endif %}
-
+  <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
 </head>

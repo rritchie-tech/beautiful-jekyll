@@ -1,0 +1,15 @@
+ .intro-header .page-heading h1 {
+	color: #800020; /* crimson */
+    font-size: 2rem;
+	/* THIS IS WHERE YOU SET THE COLOR OF THE HEADING */ 
+  }
+  
+  .page-subheading {
+	  color: gainsboro;
+	  font-size: 1rem;
+	  font-style: italic;
+  }
+  
+  ol c {
+  list-style-type: upper-roman;
+]

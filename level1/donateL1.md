@@ -1,7 +1,9 @@
 ---
 layout: listing
-title: Online Services	
+title: Donate	
 subtitle: Redeemer subtitle
+thisurl: donateL1
+level: 1
 gh-repo: daattali/beautiful-jekyll
 gh-badge: [star, fork, follow]
 tags: [test]

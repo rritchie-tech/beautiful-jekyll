@@ -1,7 +1,9 @@
 ---
 layout: listing
-title: Resources	
+title: Preschool	
 subtitle: Redeemer subtitle
+thisurl: preschoolL1
+level: 1
 gh-repo: daattali/beautiful-jekyll
 gh-badge: [star, fork, follow]
 tags: [test]

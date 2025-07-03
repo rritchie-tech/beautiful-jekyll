@@ -1,7 +1,9 @@
 ---
 layout: listing
-title: Preschool	
+title: Events	
 subtitle: Redeemer subtitle
+thisurl: eventsL1
+level: 1
 gh-repo: daattali/beautiful-jekyll
 gh-badge: [star, fork, follow]
 tags: [test]

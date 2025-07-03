@@ -1,11 +1,12 @@
 source 'https://rubygems.org'
 group:jekyll_plugins do
-  gem "wdm", ">/ 0.1.0"
-    gem "rails"
+	gem "faraday-retry"
+	gem "fiddle"
+    gem "htmlcompressor"
+	gem "htmlbeautifier"
     gem "jekyll"
     gem "jekyll-archives"
     gem "jekyll-diagrams"
-    gem "jekyll-email-project"
 	gem "jekyll-feed"
 	gem "jekyll-github-metadata"
 	gem "jekyll-imagemagick"
@@ -15,8 +16,8 @@ group:jekyll_plugins do
 	gem "jekyll-target-blank"
 	gem "jekyll-twitter-plugin"
 	gem "jemoji"
+	gem "ostruct"
+	gem "rails"
 	gem "unicode_utils"
 	gem "webrick"
-	gem "htmlcompressor"
-	gem "htmlbeautifier"
 end
