@@ -4,7 +4,7 @@ title: Prayer Requests
 subtitle: clear witness + caring service
 thisurl: prayerL2.html
 level: 2
-parent: Services
+parent: services
 gh-repo: daattali/beautiful-jekyll
 gh-badge: [star, fork, follow]
 tags: [test]
