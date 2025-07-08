@@ -18,4 +18,4 @@ author: Rick Ritchie
 ---
 
 <iframe src="https://calendar.google.com/calendar/embed?src=waidner%40redeemer-lutheran.net&height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FLos_Angeles&
-&color=%23711616&&dates=20250706/20250714" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+&color=%23711616&mode=SHEDULE&dates=20250706/2025071" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
