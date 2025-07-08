@@ -17,4 +17,5 @@ mathjax: true
 author: Rick Ritchie
 ---
 
-<iframe src="https://calendar.google.com/calendar/embed?src=waidner%40redeemer-lutheran.net&ctz=America%2FLos_Angeles" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+<iframe src="https://calendar.google.com/calendar/embed?src=waidner%40redeemer-lutheran.netheight=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FLos_Angeles&
+&color=%23711616&mode=WEEK" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
