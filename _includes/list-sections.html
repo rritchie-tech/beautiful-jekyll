@@ -17,13 +17,16 @@
 .navbar {
   position: fixed;
   top: 0;
-  height: 100px;
-  padding-left: 275px;
+  height: 91px;
+  padding-left: 200px;
   font-size: 11pt;
   font-weight: bold;
   font-color: blue;
   overflow: hidden;
   background-color: #DCDCDC;*/               /*GAINSBORO (GRAY)*/
+  /*background-image: url("/beautiful-jekyll/assets/img/Redeemer-Logo-Lamb.png");
+  background-repeat: no-repeat;        
+  /* this controls the text for the secondary dropdown items */
 }
 	
 .navbar a {
@@ -57,6 +60,7 @@
 }
 	
 .navbar a:first-child {
+  padding: 25px, 25px, 25px, 25px;
   background-color: #1E90FF; 'DODGER BLUE
 }
 	
@@ -94,7 +98,7 @@
 }
 </style>
 <div class="navbar">
-	<a href="/beautiful-jekyll/level2/frontpageL2.html"><img src="/beautiful-jekyll/assets/img/Redeemer-Logo-Lamb.png"></a>
+	<a href="/beautiful-jekyll/level2/frontpage.md"><img src="/beautiful-jekyll/assets/img/RedeemerSquare.gif"></a>
 	{% for item in site.pages %}
 		{% if {{item.level}} == 1 %}
 		<div class="dropdown">
