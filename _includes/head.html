@@ -78,10 +78,10 @@
 
   {% if site.site-css %}
     {% for css in site.site-css %}
-      <link rel="stylesheet" href="{{ css | relative_url }}">
+  <link rel="stylesheet" href="{{ css | relative_url }}">
     {% endfor %}
   {% else %}
-      <link rel="stylesheet" href="/assets/css/custom-styles.css">
+  <link rel="stylesheet" href="/assets/css/custom-styles.css">
   {% endif %}
 
   {% if page.ext-css %}
@@ -92,7 +92,7 @@
   
   {% if page.css %}
     {% for css in page.css %}
-      <link rel="stylesheet" href="{{ css | relative_url }}">
+  <link rel="stylesheet" href="{{ css | relative_url }}">
     {% endfor %}
   {% endif %}
 
