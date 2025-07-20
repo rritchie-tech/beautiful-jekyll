@@ -13,6 +13,7 @@
 {% else %}
 	{% capture _content %}
 		{{ content }}
+		<DIV>There is your content</DIV>
 	{% endcapture %}
 	{% assign _profile = site.compress_html.profile %}
 	{% if site.compress_html.endings == "all" %}
