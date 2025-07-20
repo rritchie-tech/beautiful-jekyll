@@ -91,9 +91,9 @@
 						{%- assign _trimmed = _line | split: " " | join: " " -%}
 						{%- if _trimmed != empty or forloop.last -%}
 							{%- unless forloop.first -%}
-								{{ _LINE_FEED }}
+								{{- _LINE_FEED -}}
 							{%- endunless -%}
-							{{ _line }}
+							{{- _line -}}
 						{%- endif -%}
 					{%- endfor -%}
 				{%- endcapture -%}
@@ -112,7 +112,7 @@
 				{% endcapture %}
 			{%- endif -%}	
 		{%- endif -%}
-		{% capture _content %}
+		{%- capture _content -%}
 			{{ _content }}
 			{%- if _pre_before contains "</pre>" -%}
 				<pre{{ _pres.first }}</pre>
@@ -120,7 +120,7 @@
 			{%- unless _pre_before contains "</pre>" and _pres.size == 1 -%}
 				{{ _pres_after }}
 			{%- endunless -%}
-		{% endcapture %}
+		{%- endcapture -%}
 		{%- endfor -%}
 		{%- if _profile -%}
 			{%- assign _profile_collapse = _content | size | plus: 1 -%}
@@ -134,7 +134,7 @@
 		{%- if _profile and _clippings -%}
 		{%- assign _profile_clippings = _content | size | plus: 1 -%}
 		{%- endif -%}
-		{{ _content }}
+		{{- _content -}}
 		{%- if _profile -%} 
 			<table id="compress_html_profile_{{ site.time | date: "%Y%m%d" }}" class="compress_html_profile"> <thead> <tr> <td>Step <td>Bytes <tbody> <tr> <td>raw <td>{{ content | size }}{%- if _profile_endings -%} <tr> <td>endings <td>{{ _profile_endings }}{%- endif -%}{%- if _profile_startings -%} <tr> <td>startings <td>{{ _profile_startings }}{%- endif -%}{%- if _profile_comments -%} <tr> <td>comments <td>{{ _profile_comments }}{%- endif -%}{%- if _profile_collapse -%} <tr> <td>collapse <td>{{ _profile_collapse }}
 		{%- endif -%}
