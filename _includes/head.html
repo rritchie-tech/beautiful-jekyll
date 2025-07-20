@@ -53,7 +53,11 @@
   {% if site.keywords %}
   <meta name="keywords" content="{{ site.keywords }}">
   {% endif %}
-
+  
+  {% if site.title-image %}
+  <meta name="title-image" content="{{ site.title-image }}">
+  {% endif %}
+  
   {% if site.rss-description %}
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | absolute_url }}">
   {% endif %}
