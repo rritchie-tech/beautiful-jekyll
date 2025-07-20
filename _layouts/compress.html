@@ -12,10 +12,10 @@
 	{{ content }}
 	<DIV>You are not content.</DIV>
 {%- else -%}
-	{% capture _content %}
+	{%- capture _content -%}
 		{{ content }}
 		<DIV>There is your content</DIV>
-	{% endcapture %}
+	{%- endcapture -%}
 	{%- assign _profile = site.compress_html.profile -%}
 	{%- if site.compress_html.endings == "all" -%}
 		{%- assign _endings = "html head body li dt dd optgroup option colgroup caption thead tbody tfoot tr td th" | split: " " -%}
