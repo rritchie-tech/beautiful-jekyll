@@ -23,9 +23,9 @@
 		{%- assign _endings = site.compress_html.endings -%}
 	{%- endif -%}
 	{%- for _element in _endings -%}
-		{% capture _end %}
+		{%- capture _end -%}
 			</{{ _element }}>
-		{% endcapture %}
+		{%- endcapture -%}
 		{%- assign _content = _content | remove: _end -%}
 	{%- endfor -%}
 	{%- if _profile and _endings -%}
@@ -46,21 +46,21 @@
 		{%- assign _comments = site.compress_html.comments -%}
 	{%- endif -%}
 	{%- if _comments.size == 2 -%}
-		{% capture _comment_befores %}
+		{%- capture _comment_befores -%}
 			.{{ _content }}
-		{% endcapture %}
+		{%- endcapture -%}
 		{%- assign _comment_befores = _comment_befores | split: _comments.first -%}
 		{%- for _comment_before in _comment_befores -%}
 			{%- if forloop.first -%}
 				{%- continue -%}
 			{%- endif -%}
-			{% capture _comment_outside %}
+			{%- capture _comment_outside -%}
 				{%- if _carry -%}
 					{{ _comments.first }}
 				{%- endif -%}
-				{{ _comment_before }}
-			{% endcapture %}
-			{% capture _comment %}
+				{{- _comment_before -}}
+			{%- endcapture -%}
+			{%- capture _comment -%}
 				{%- unless _carry -%}
 					{{ _comments.first }}
 				{%- endunless -%}
@@ -71,7 +71,7 @@
 				{%- else -%}
 					{%- assign _carry = true -%}
 				{%- endif -%}
-			{% endcapture %}
+			{%- endcapture -%}
 			{%- assign _content = _content | remove_first: _comment -%}
 		{%- endfor -%}
 		{%- if _profile -%}
