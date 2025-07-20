@@ -13,7 +13,7 @@
 	<DIV>You are not content.</DIV>
 {%- else -%}
 	{%- capture _content -%}
-		{{ content }}
+		{{- content -}}
 		<DIV>There is your content</DIV>
 	{%- endcapture -%}
 	{%- assign _profile = site.compress_html.profile -%}
