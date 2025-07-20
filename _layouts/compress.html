@@ -6,16 +6,16 @@
 # MIT License
 ---
 
-{%- capture _LINE_FEED -%}
-{%- endcapture -%}
+{% capture _LINE_FEED %}
+{% endcapture %}
 {%- if site.compress_html.ignore.envs contains jekyll.environment or site.compress_html.ignore.envs == "all" or page.compress_html == false -%}
 	{{ content }}
 	<DIV>You are not content.</DIV>
 {%- else -%}
-	{%- capture _content -%}
+	{% capture _content %}
 		{{ content }}
 		<DIV>There is your content</DIV>
-	{%- endcapture -%}
+	{% endcapture %}
 	{%- assign _profile = site.compress_html.profile -%}
 	{%- if site.compress_html.endings == "all" -%}
 		{%- assign _endings = "html head body li dt dd optgroup option colgroup caption thead tbody tfoot tr td th" | split: " " -%}
@@ -23,18 +23,18 @@
 		{%- assign _endings = site.compress_html.endings -%}
 	{%- endif -%}
 	{%- for _element in _endings -%}
-		{%- capture _end -%}
+		{% capture _end %}
 			</{{ _element }}>
-		{%- endcapture -%}
+		{% endcapture %}
 		{%- assign _content = _content | remove: _end -%}
 	{%- endfor -%}
 	{%- if _profile and _endings -%}
 		{%- assign _profile_endings = _content | size | plus: 1 -%}
 	{%- endif -%}
 	{%- for _element in site.compress_html.startings -%}
-		{%- capture _start -%}
+		{% capture _start %}
 			<{{ _element }}>
-		{%- endcapture -%}
+		{% endcapture %}
 		{%- assign _content = _content | remove: _start -%}
 	{%- endfor -%}
 	{%- if _profile and site.compress_html.startings -%}
@@ -46,21 +46,21 @@
 		{%- assign _comments = site.compress_html.comments -%}
 	{%- endif -%}
 	{%- if _comments.size == 2 -%}
-		{%- capture _comment_befores -%}
+		{% capture _comment_befores %}
 			.{{ _content }}
-		{%- endcapture -%}
+		{% endcapture %}
 		{%- assign _comment_befores = _comment_befores | split: _comments.first -%}
 		{%- for _comment_before in _comment_befores -%}
 			{%- if forloop.first -%}
 				{%- continue -%}
 			{%- endif -%}
-			{%- capture _comment_outside -%}
+			{% capture _comment_outside %}
 				{%- if _carry -%}
 					{{ _comments.first }}
 				{%- endif -%}
 				{{ _comment_before }}
-			{%- endcapture -%}
-			{%- capture _comment -%}
+			{% endcapture %}
+			{% capture _comment %}
 				{%- unless _carry -%}
 					{{ _comments.first }}
 				{%- endunless -%}
@@ -71,7 +71,7 @@
 				{%- else -%}
 					{%- assign _carry = true -%}
 				{%- endif -%}
-			{%- endcapture -%}
+			{% endcapture %}
 			{%- assign _content = _content | remove_first: _comment -%}
 		{%- endfor -%}
 		{%- if _profile -%}
@@ -86,7 +86,7 @@
 		{%- if _pres.size != 0 -%}
 			{%- if site.compress_html.blanklines -%}
 				{%- assign _lines = _pres.last | split: _LINE_FEED -%}
-				{%- capture _pres_after -%}
+				{% capture _pres_after %}
 					{%- for _line in _lines -%}
 						{%- assign _trimmed = _line | split: " " | join: " " -%}
 						{%- if _trimmed != empty or forloop.last -%}
@@ -96,11 +96,11 @@
 							{{ _line }}
 						{%- endif -%}
 					{%- endfor -%}
-				{%- endcapture -%}
+				{% endcapture %}
 				<div>blanklines: true</div>
 			{%- else -%}
 				{%- assign _lines = _pres.last | split: _LINE_FEED -%}
-				{%- capture _pres_after -%}
+				{% capture _pres_after %}
 					{%- for _line in _lines -%}
 						{%- assign _trimmed = _line | split: " " | join: " " -%}
 						{%- if _trimmed != empty or forloop.last -%}
@@ -110,11 +110,11 @@
 							{{ _line }}
 						{%- endif -%}
 					{%- endfor -%}
-				{%- endcapture -%}
+				{% endcapture %}
 				<div>blanklines: true anyway.</div>
 			{%- endif -%}	
 		{%- endif -%}
-		{%- capture _content -%}
+		{% capture _content %}
 			{{ _content }}
 			{%- if _pre_before contains "</pre>" -%}
 				<pre{{ _pres.first }}</pre>
@@ -122,7 +122,7 @@
 			{%- unless _pre_before contains "</pre>" and _pres.size == 1 -%}
 				{{ _pres_after }}
 			{%- endunless -%}
-		{%- endcapture -%}
+		{% endcapture %}
 		{%- endfor -%}
 		{%- if _profile -%}
 			{%- assign _profile_collapse = _content | size | plus: 1 -%}
