@@ -18,20 +18,25 @@
 	{%- endcapture -%}
 	{%- assign _profile = site.compress_html.profile -%}
 	{%- if site.compress_html.endings == "all" -%}
-		{%- assign _endings = "html body li dt dd optgroup option colgroup caption thead tbody tfoot tr td th" | split: " " -%}
+		{%- assign _endings = "html head body li dt dd optgroup option colgroup caption thead tbody tfoot tr td th" | split: " " -%}
 	{%- else -%}
 		{%- assign _endings = site.compress_html.endings -%}
 	{%- endif -%}
 	{%- for _element in _endings -%}
-		{%- capture _end -%}
+		{% capture _end %}
 			</{{ _element }}>
-		{%- endcapture -%}
+		{% endcapture %}
 		{%- assign _content = _content | remove: _end -%}
 	{%- endfor -%}
 	{%- if _profile and _endings -%}
 		{%- assign _profile_endings = _content | size | plus: 1 -%}
 	{%- endif -%}
-	
+	{%- for _element in site.compress_html.startings -%}
+		{%- capture _start -%}
+			<{{ _element }}>
+		{%- endcapture -%}
+		{%- assign _content = _content | remove: _start -%}
+	{%- endfor -%}
 	{%- if _profile and site.compress_html.startings -%}
 		{%- assign _profile_startings = _content | size | plus: 1 -%}
 	{%- endif -%}
