@@ -98,24 +98,24 @@
 </style>
 <div class="navbar">
 	<a href="/beautiful-jekyll/level2/frontpage.md"><img src="/beautiful-jekyll/assets/img/RedeemerSquare.gif"></a>
-	{% for item in site.pages %}
+	{%- for item in site.pages -%}
 		{% if {{item.level}} == 1 %}
 		<div class="dropdown">
 			<button class="dropbtn">{{ item.title | strip }}
 			  <i class="fa fa-caret-down"></i>
 			</button>
 			<div class="dropdown-content">
-				{% for item2 in site.pages %}
+				{%- for item2 in site.pages -%}
 					{% if {{item2.level}} == 2 %}
 						{% if item2.parent == item.title %}
 							<a href=/beautiful-jekyll/level2/{{item2.thisurl | strip }}>{{item2.title | strip }}</a>
 						{% endif %}
 					{% endif %}
-				{% endfor %}
+				{%- endfor -%}
 			</div>		  
 		</div>
 		{%  endif %}
-	{% endfor %}
+	{%- endfor -%}
 </div>	
 <ul>
     
