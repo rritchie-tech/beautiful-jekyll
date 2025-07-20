@@ -313,7 +313,7 @@ compress_html:
   endings: []
   ignore:
     envs: []
-  blanklines: false
+  blanklines: true
   profile: false
   startings: []
   
