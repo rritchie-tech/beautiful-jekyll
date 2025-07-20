@@ -101,14 +101,14 @@
 	{% for item in site.pages %}
 		{% if {{item.level}} == 1 %}
 		<div class="dropdown">
-			<button class="dropbtn">{{ item.title }}
+			<button class="dropbtn">{{ item.title | strip }}
 			  <i class="fa fa-caret-down"></i>
 			</button>
 			<div class="dropdown-content">
 				{% for item2 in site.pages %}
 					{% if {{item2.level}} == 2 %}
 						{% if item2.parent == item.title %}
-							<a href=/beautiful-jekyll/level2/{{item2.thisurl}}>{{item2.title}}</a>
+							<a href=/beautiful-jekyll/level2/{{item2.thisurl}}>{{item2.title | strip }}</a>
 						{% endif %}
 					{% endif %}
 				{% endfor %}
