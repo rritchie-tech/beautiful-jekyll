@@ -91,10 +91,9 @@
 						{%- assign _trimmed = _line | split: " " | join: " " -%}
 						{%- if _trimmed != empty or forloop.last -%}
 							{%- unless forloop.first -%}
-								{{ _LINE_FEED }}
-								{{ _line }}
+								{{ _LINE_FEED }}LF
 							{%- endunless -%}
-							
+							{{ _line }}
 						{%- endif -%}
 					{%- endfor -%}
 				{%- endcapture -%}
