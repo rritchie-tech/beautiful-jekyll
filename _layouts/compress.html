@@ -31,12 +31,7 @@
 	{%- if _profile and _endings -%}
 		{%- assign _profile_endings = _content | size | plus: 1 -%}
 	{%- endif -%}
-	{%- for _element in site.compress_html.startings -%}
-		{%- capture _start -%}
-			<{{ _element }}>
-		{%- endcapture -%}
-		{%- assign _content = _content | remove: _start -%}
-	{%- endfor -%}
+	
 	{%- if _profile and site.compress_html.startings -%}
 		{%- assign _profile_startings = _content | size | plus: 1 -%}
 	{%- endif -%}
