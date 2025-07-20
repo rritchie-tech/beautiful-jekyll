@@ -40,7 +40,7 @@ avatar: "/assets/img/RedeemerSquare.gif"
 # If you want to have an image logo in the top-left corner instead of having the title of the website,
 # then specify the following parameter
 
-title-img: /assets/img/RedeemerSquare.gif
+title-img: "/assets/img/RedeemerSquare.gif"
 
 
 #####################################
@@ -306,16 +306,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
           
-
-compress_html:
-  clippings: []
-  comments: []
-  endings: []
-  ignore:
-    envs: []
-  blanklines: true
-  profile: false
-  startings: []
+compress_html: blanklines: true
   
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
