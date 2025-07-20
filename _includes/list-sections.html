@@ -99,7 +99,7 @@
 <div class="navbar">
 	<a href="/beautiful-jekyll/level2/frontpage.md"><img src="/beautiful-jekyll/assets/img/RedeemerSquare.gif"></a>
 	{%- for item in site.pages -%}
-		{%- if {{item.level}} == 1 -%}
+		{% if {{item.level}} == 1 %}
 		<div class="dropdown">
 			<button class="dropbtn">{{- item.title | strip -}}
 			  <i class="fa fa-caret-down"></i>
@@ -114,7 +114,7 @@
 				{%- endfor -%}
 			</div>		  
 		</div>
-		{%-  endif -%}
+		{%  endif %}
 	{%- endfor -%}
 </div>	
 <ul>
