@@ -92,8 +92,9 @@
 						{%- if _trimmed != empty or forloop.last -%}
 							{%- unless forloop.first -%}
 								{{ _LINE_FEED }}
+								{{ _line }}
 							{%- endunless -%}
-							{{ _line }}
+							
 						{%- endif -%}
 					{%- endfor -%}
 				{%- endcapture -%}
