@@ -97,7 +97,6 @@
 						{%- endif -%}
 					{%- endfor -%}
 				{% endcapture %}
-				<div>blanklines: true</div>
 			{%- else -%}
 				{%- assign _lines = _pres.last | split: _LINE_FEED -%}
 				{% capture _pres_after %}
@@ -111,7 +110,6 @@
 						{%- endif -%}
 					{%- endfor -%}
 				{% endcapture %}
-				<div>blanklines: true anyway.</div>
 			{%- endif -%}	
 		{%- endif -%}
 		{% capture _content %}
