@@ -13,7 +13,7 @@
   title: Redeemer Lutheran Church of Huntington Beach
 
 # Your name to show in the footer
-author: Rick Ritchie
+  author: Rick Ritchie
 
 ###############################################
 # --- List of links in the navigation bar --- #
@@ -32,7 +32,7 @@ author: Rick Ritchie
 
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/assets/img/RedeemerSquare.gif"
+  avatar: "/assets/img/RedeemerSquare.gif"
 
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
 #round-avatar: false
@@ -47,7 +47,7 @@ avatar: "/assets/img/RedeemerSquare.gif"
 # Select the social network links that you want to show in the footer.
 # You can change the order that they show up on the page by changing the order here.
 # Uncomment the links you want to show and add your information to each one.
-social-network-links:
+# social-network-links:
   email: "someone@example.com"
   rss: true  # remove this line if you don't want to show an RSS link at the bottom
   facebook: deanattali
@@ -264,6 +264,7 @@ social-network-links:
   permalink: /:year-:month-:day-:title/
   paginate: 5
 
+---
 kramdown:
   input: GFM
 
@@ -282,13 +283,13 @@ defaults:
       path: "" # any file that's not a post will be a "page" layout by default
     values:
       layout: "page"
--
+  -
     scope:
       path: "" # any file that's not a post will be a "page" layout by default
     values:
       level: "0"
 # Exclude these files from production site
-exclude:
+#exclude:
   - CHANGELOG.md
   - CNAME
   - Gemfile
@@ -298,12 +299,13 @@ exclude:
   - screenshot.png
   - docs/
 
-plugins:
+#plugins:
   - jekyll-paginate-v2
   - jekyll-sitemap
   - jekyll-seo-tag
           
-compress_html: blanklines: true
+compress_html: 
+  blanklines: true
   
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
