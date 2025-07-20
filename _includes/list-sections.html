@@ -94,7 +94,7 @@
 	}
 	</style>
 	<div class="navbar">
-		<a href="/beautiful-jekyll/level2/frontpage.md"><img src="{{-title-img | strip -}}"></a>
+		<a href="/beautiful-jekyll/level2/frontpage.md"><img src="{{- site.title-img -}}"></a>
 		
 		{% for item in site.pages %}
 			{% if {{item.level}} == 1 %}
