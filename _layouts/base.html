@@ -20,21 +20,20 @@ common-ext-js:
 common-js:
   - "/assets/js/beautifuljekyll.js"
 ---
-<NOTHING></NOTHING>
 {%- include tiptop.html -%}
 
-{% include head.html %}
+{%- include head.html -%}
 
 <body>
-  {% include gtm_body.html %}
+  {%- include gtm_body.html -%}
 
-  {% include nav2.html %}
+  {%- include nav2.html -%}
 
-  {{ content }}
+  {{- content -}}
 
-  {% include footer.html %}
+  {%- include footer.html -%}
 
-  {% include footer-scripts.html %}
+  {%- include footer-scripts.html -%}
 
 </body>
 </html>
