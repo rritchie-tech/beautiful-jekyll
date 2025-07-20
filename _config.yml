@@ -40,9 +40,6 @@ avatar: "/assets/img/RedeemerSquare.gif"
 # If you want to have an image logo in the top-left corner instead of having the title of the website,
 # then specify the following parameter
 
-  site.title-image: /assets/img/RedeemerSquare.gif
-
-
 #####################################
 # --- Footer social media links --- #
 #####################################
@@ -161,7 +158,7 @@ social-network-links:
 
 # For any extra visual customization, you can include additional CSS files in every page on your site. List any custom CSS files here
   site.site-css: "/assets/css/custom-styles.css"
-
+  site.title-image: "/assets/img/RedeemerSquare.gif"
 # If you have common JavaScript files that should be included in every page, list them here
 #site-js:
 #  - "/assets/js/custom-script.js"
