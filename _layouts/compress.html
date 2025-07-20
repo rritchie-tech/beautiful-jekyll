@@ -85,7 +85,7 @@
 		{% assign _pres_after = "" %}
 		{% if _pres.size != 0 %}
 			{% if site.compress_html.blanklines %}
-			{% assign _lines = _pres.last | split: _LINE_FEED %}
+				{% assign _lines = _pres.last | split: _LINE_FEED %}
 				{% capture _pres_after %}
 					{% for _line in _lines %}
 						{% assign _trimmed = _line | split: " " | join: " " %}
@@ -99,8 +99,19 @@
 				{% endcapture %}
 				<div>blanklines: true</div>
 			{% else %}
-				{% assign _pres_after = _pres.last | split: " " | join: " " %}
-				<div>blanklines: false</div>
+				{% assign _lines = _pres.last | split: _LINE_FEED %}
+				{% capture _pres_after %}
+					{% for _line in _lines %}
+						{% assign _trimmed = _line | split: " " | join: " " %}
+						{% if _trimmed != empty or forloop.last %}
+							{% unless forloop.first %}
+								{{ _LINE_FEED }}
+							{% endunless %}
+							{{ _line }}
+						{% endif %}
+					{% endfor %}
+				{% endcapture %}
+				<div>blanklines: true anyway.</div>
 			{% endif %}	
 		{% endif %}
 		{% capture _content %}
