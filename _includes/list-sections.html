@@ -94,6 +94,9 @@
 	}
 	</style>
 	<div class="navbar">
+		{% if site.title-image %}
+		<a href ="home.html"><img src="There is a variable">haha</a>
+		{% endif %}
 		<a href="/beautiful-jekyll/level2/frontpage.md"><img src="{{ site.title-image }}" alt="1"><img src="{{ site.tit-img }}" alt="2"><img src="{{ title-image }}" alt="3"></a><img src="{{ tit-img }}" alt="4">
 		
 		{% for item in site.pages %}
