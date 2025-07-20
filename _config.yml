@@ -40,7 +40,8 @@ avatar: "/assets/img/RedeemerSquare.gif"
 # If you want to have an image logo in the top-left corner instead of having the title of the website,
 # then specify the following parameter
 
-  site.title-image: /assets/img/RedeemerSquare.gif
+  title-image: /assets/img/RedeemerSquare.gif
+tit-img: /assents/img/bgimage
 
 
 #####################################
