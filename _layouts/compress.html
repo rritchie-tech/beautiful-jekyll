@@ -32,9 +32,9 @@
 		{%- assign _profile_endings = _content | size | plus: 1 -%}
 	{%- endif -%}
 	{%- for _element in site.compress_html.startings -%}
-		{% capture _start %}
+		{%- capture _start -%}
 			<{{ _element }}>
-		{% endcapture %}
+		{%- endcapture -%}
 		{%- assign _content = _content | remove: _start -%}
 	{%- endfor -%}
 	{%- if _profile and site.compress_html.startings -%}
@@ -91,7 +91,7 @@
 						{%- assign _trimmed = _line | split: " " | join: " " -%}
 						{%- if _trimmed != empty or forloop.last -%}
 							{%- unless forloop.first -%}
-								{{ _LINE_FEED }}LF
+								{{ _LINE_FEED }}
 							{%- endunless -%}
 							{{ _line }}
 						{%- endif -%}
