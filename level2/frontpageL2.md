@@ -4,11 +4,7 @@ title: Front Page
 subtitle: clear witness + caring service
 thisurl: frontpageL2.html
 level: 2
-<<<<<<< HEAD
-parent: services
-=======
 parent: Services
->>>>>>> db292a20fa9eecc28f3b01740a1dfd0178239ffe
 gh-repo: daattali/beautiful-jekyll
 gh-badge: [star, fork, follow]
 tags: [test]
