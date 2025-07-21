@@ -2,7 +2,7 @@
 layout: listing
 title: About Redeemer
 subtitle: Redeemer subtitle
-thisurl: aboutL2.md
+thisurl: aboutL2.html
 level: 2
 parent: About
 gh-repo: daattali/beautiful-jekyll
