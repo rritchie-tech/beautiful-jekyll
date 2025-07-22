@@ -1,7 +1,9 @@
 source 'https://rubygems.org'
 group:jekyll_plugins do
+	gem "beautiful-jekyll-theme"
 	gem "faraday-retry"
 	gem "fiddle"
+    gem 'github-linguist'
     gem "htmlcompressor"
 	gem "htmlbeautifier"
     gem "jekyll"
@@ -18,6 +20,7 @@ group:jekyll_plugins do
 	gem "jemoji"
 	gem "ostruct"
 	gem "rails"
+	gem "tzinfo-data"
 	gem "unicode_utils"
 	gem "webrick"
 end
