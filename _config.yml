@@ -301,7 +301,6 @@ exclude:
   - docs/
 
 plugins:
-  - jekyll-paginate-v2
   - jekyll-sitemap
   - jekyll-seo-tag 
   
