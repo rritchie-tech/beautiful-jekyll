@@ -1,7 +1,7 @@
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  {% include listSnippet.html %}
   {% capture pagetitle %}
     {%- if page.share-title -%}
       {{ page.share-title | strip_html | xml_escape }}
@@ -31,7 +31,7 @@
     {%- endif -%}
   {% endcapture %}
 
-  <title>{{ title }}</title>
+		<title>{{ title }}</title>
 
   {% capture author %}
     {%- if page.author -%}
@@ -41,27 +41,27 @@
     {%- endif -%}
   {% endcapture %}
   {% if author != "" %}
-  <meta name="author" content="{{ author }}">
+		<meta name="author" content="{{ author }}">
   {% endif %}
   
-  <meta name="description" content="{{ description }}">
+		<meta name="description" content="{{ description }}">
 
   {% if site.mobile-theme-col %}
-  <meta name="theme-color" content="{{ site.mobile-theme-col }}">
+		<meta name="theme-color" content="{{ site.mobile-theme-col }}">
   {% endif %}
 
   {% if site.keywords %}
-  <meta name="keywords" content="{{ site.keywords }}">
+		<meta name="keywords" content="{{ site.keywords }}">
   {% endif %}
   
   {% if site.title-image %}
-  <meta name="title-image" content="{{ site.title-image }}">
+		<meta name="title-image" content="{{ site.title-image }}">
   {% else %}
-  <meta name="no-title-image" content="no-title-image.png">
+		<meta name="no-title-image" content="no-title-image.png">
   {% endif %}
   
   {% if site.rss-description %}
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | absolute_url }}">
+		<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | absolute_url }}">
   {% endif %}
 
   {% include gtag.html %}
@@ -72,105 +72,114 @@
        {% include mathjax.html %} 
   {% endcomment %}
   
-
   {% if layout.common-ext-css %}
     {% for css in layout.common-ext-css %}
-      {% include ext-css.html css=css %}
+	  {% if css == "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" %}
+        {% if site.use-font-awesome %}
+	      {% include ext-css.html css=css %}
+		{% endif %}
+	  {% else %}
+		{% include ext-css.html css=css %}
+	  {% endif %}
     {% endfor %}
   {% endif %}
-
   {% if layout.common-css %}
     {% for css in layout.common-css %}
-  <link rel="stylesheet" href="{{ css | relative_url }}">
+	  {% if css contains "navbar" %}
+      {% else %}
+		<link rel="stylesheet" href="{{ css | relative_url }}">
+	  {% endif %}
     {% endfor %}
   {% endif %}
-
+  {% if site.beautifuljekyll-navbar-css %}
+    {% for css in site.beautifuljekyll-navbar-css %}
+		<link rel="stylesheet" href="{{ css | relative_url }}">
+    {% endfor %}
+  {% endif %}
   {% if site.site-css %}
     {% for css in site.site-css %}
-  <link rel="stylesheet" href="{{ css | relative_url }}">
+		<link rel="stylesheet" href="{{ css | relative_url }}">
     {% endfor %}
   {% else %}
-  <link rel="stylesheet" href="/assets/css/custom-styles.css">
+		<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/custom-styles.css">
   {% endif %}
-
   {% if page.ext-css %}
     {% for css in page.ext-css %}
       {% include ext-css.html css=css %}
     {% endfor %}
   {% endif %}
-  
   {% if page.css %}
     {% for css in page.css %}
-  <link rel="stylesheet" href="{{ css | relative_url }}">
+		<link rel="stylesheet" href="{{ css | relative_url }}">
     {% endfor %}
   {% endif %}
 
   {% if site.fb_app_id %}
-  <meta property="fb:app_id" content="{{ site.fb_app_id }}">
+		<meta property="fb:app_id" content="{{ site.fb_app_id }}">
   {% endif %}
 
   {% if site.title %}
-  <meta property="og:site_name" content="{{ site.title }}here">
+		<meta property="og:site_name" content="{{ site.title }}">
   {% endif %}
 
-  {%- capture img -%}
-    {%- if page.share-img -%}
+  {% capture img %}
+    {% if page.share-img %}
       {{ page.share-img }}
-    {%- elsif page.cover-img -%}
-      {%- if page.cover-img.first -%}
+    {% elsif page.cover-img %}
+      {% if page.cover-img.first %}
         {{ page.cover-img[0].first.first }}
-      {%- else -%}
+      {% else %}
         {{ page.cover-img }}
-      {%- endif -%}
-    {%- elsif page.thumbnail-img -%}
+      {% endif %}
+    {% elsif page.thumbnail-img %}
       {{ page.thumbnail-img }}
-    {%- elsif site.avatar -%}
+    {% elsif site.avatar %}
       {{ site.avatar }}
     {% endif %}
-  {%- endcapture -%}
-  {%- assign img=img | strip -%}
+  {% endcapture %}
+  {% assign img=img | strip %}
 
-  <meta property="og:title" content="{{ title }}">
-  <meta property="og:description" content="{{ description }}">
+		<meta property="og:title" content="{{ title }}">
+		<meta property="og:description" content="{{ description }}">
 
   {% if img != "" %}
-  <meta property="og:image" content="{{ img | absolute_url }}">
+		<meta property="og:image" content="{{ img | absolute_url }}">
   {% endif %}
 
   {% if page.id %}
-  <meta property="og:type" content="article">
+		<meta property="og:type" content="article">
   {% if author != "" %}
-  <meta property="og:article:author" content="{{ author }}">
+		<meta property="og:article:author" content="{{ author }}">
   {% endif %}
-  <meta property="og:article:published_time" content="{{ page.date | date_to_xmlschema }}">
-  <meta property="og:url" content="{{ page.url | absolute_url }}">
-  <link rel="canonical" href="{{ page.url | absolute_url }}">
+		<meta property="og:article:published_time" content="{{ page.date | date_to_xmlschema }}">
+		<meta property="og:url" content="{{ page.url | absolute_url }}">
+		<link rel="canonical" href="{{ page.url | absolute_url }}">
   {% else %}
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="{{ page.url | absolute_url | strip_index }}">
-  <link rel="canonical" href="{{ page.url | absolute_url | strip_index }}">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="{{ page.url | absolute_url | strip_index }}">
+		<link rel="canonical" href="{{ page.url | absolute_url | strip_index }}">
   {% endif %}
 
   {% if img != "" and img != site.avatar %}
-  <meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:card" content="summary_large_image">
   {% else %}
-  <meta name="twitter:card" content="summary">
+		<meta name="twitter:card" content="summary">
   {% endif %}
-  <meta name="twitter:site" content="@{{ site.social-network-links.twitter }}">
-  <meta name="twitter:creator" content="@{{ site.social-network-links.twitter }}">
+		<meta name="twitter:site" content="@{{ site.social-network-links.twitter }}">
+		<meta name="twitter:creator" content="@{{ site.social-network-links.twitter }}">
 
-  <meta property="twitter:title" content="{{ title }}">
-  <meta property="twitter:description" content="{{ description }}">
+		<meta property="twitter:title" content="{{ title }}">
+		<meta property="twitter:description" content="{{ description }}">
 
   {% if img != "" %}
-  <meta name="twitter:image" content="{{ img | absolute_url }}">
+		<meta name="twitter:image" content="{{ img | absolute_url }}">
   {% endif %}
 
   {% include matomo.html %}
 
   {% if page.comments and site.staticman.repository and site.staticman.branch %}
-  <link rel="stylesheet" href="{{ "/assets/css/staticman.css" | relative_url }}">
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
+		<link rel="stylesheet" href="{{ "{{ site.baseurl }}/assets/css/staticman.css" | relative_url }}">
+		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
   {% endif %}
 
   {% assign favicon_exists = site.static_files | where: "path", "/favicon.ico" | size %}
@@ -183,5 +192,5 @@
       {% include {{ file }} %}
     {% endfor %}
   {% endif %}
-  <link rel="icon" type="image/x-icon" href="/beautiful-jekyll/assets/img/favicon.ico">
-</head>
+		<link rel="icon" type="image/x-icon" href="{{ site.baseurl }}/assets/img/favicon.ico">
+	</head>
