@@ -1,0 +1,36 @@
+---
+# This is a sample YAML configuration file
+# Comments are denoted by a hash symbol (#)
+
+# Basic key-value pairs
+application_name: MyAwesomeApp
+version: "1.0.0" # Strings can be quoted or unquoted if they don't contain special characters
+debug_mode: true # Boolean values
+
+# Lists (sequences)
+database_servers:
+  - host: db1.example.com
+    port: 5432
+  - host: db2.example.com
+    port: 5432
+
+# Nested structures (mappings)
+server_settings:
+  port: 8080
+  timeout_seconds: 30
+  log_level: INFO
+
+# Complex data structures within a list
+users:
+  - id: 101
+    name: Alice
+    email: alice@example.com
+    roles:
+      - admin
+      - editor
+  - id: 102
+    name: Bob
+    email: bob@example.com
+    roles:
+      - viewer
+...

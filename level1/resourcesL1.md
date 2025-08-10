@@ -4,6 +4,7 @@ title: Resources
 subtitle: Redeemer subtitle
 thisurl: resourcesL1
 level: 1
+order: 6
 gh-repo: daattali/beautiful-jekyll
 gh-badge: [star, fork, follow]
 tags: [test]

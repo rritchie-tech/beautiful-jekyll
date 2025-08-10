@@ -4,6 +4,7 @@ title: Engage
 subtitle: Redeemer subtitle
 thisurl: engageL1
 level: 1
+order: 4
 gh-repo: daattali/beautiful-jekyll
 gh-badge: [star, fork, follow]
 tags: [test]

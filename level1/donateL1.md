@@ -4,6 +4,7 @@ title: Donate
 subtitle: Redeemer subtitle
 thisurl: donateL1
 level: 1
+order: 7
 gh-repo: daattali/beautiful-jekyll
 gh-badge: [star, fork, follow]
 tags: [test]

@@ -4,6 +4,7 @@ title: Education
 subtitle: Redeemer subtitle
 thisurl: educationL1
 level: 1
+order: 2
 gh-repo: daattali/beautiful-jekyll
 gh-badge: [star, fork, follow]
 tags: [test]

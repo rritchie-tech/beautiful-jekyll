@@ -4,6 +4,7 @@ title: About
 subtitle: Redeemer subtitle
 thisurl: aboutL1.html
 level: 1
+order: 1
 gh-repo: daattali/beautiful-jekyll
 gh-badge: [star, fork, follow]
 tags: [test]

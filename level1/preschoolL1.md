@@ -2,8 +2,9 @@
 layout: listing
 title: Preschool	
 subtitle: Redeemer subtitle
-thisurl: preschoolL1
+thisurl: preschoolL1.html
 level: 1
+order: 15
 gh-repo: daattali/beautiful-jekyll
 gh-badge: [star, fork, follow]
 tags: [test]
