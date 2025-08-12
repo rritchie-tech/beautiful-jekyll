@@ -87,21 +87,21 @@
     {% for css in layout.common-css %}
 	  {% if css contains "navbar" %}
       {% else %}
-		<link rel="stylesheet" href="{{ css | relative_url }}">
+		<link rel="stylesheet" href="{{ site.baseurl }}/{{ css }}">
 	  {% endif %}
     {% endfor %}
   {% endif %}
   {% if site.beautifuljekyll-navbar-css %}
     {% for css in site.beautifuljekyll-navbar-css %}
-		<link rel="stylesheet" href="{{ css | relative_url }}">
+		<link rel="stylesheet1" href="{{ site.baseurl }}/{{ css }}">
     {% endfor %}
   {% endif %}
   {% if site.site-css %}
     {% for css in site.site-css %}
-		<link rel="stylesheet" href="{{ site.baseurl }}/{{ css }}">
+		<link rel="stylesheet2" href="{{ site.baseurl }}/{{ css }}">
     {% endfor %}
   {% else %}
-		<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/custom-styles.css">
+		<link rel="stylesheet3" href="{{ site.baseurl }}/assets/css/custom-styles.css">
   {% endif %}
   {% if page.ext-css %}
     {% for css in page.ext-css %}
@@ -110,7 +110,7 @@
   {% endif %}
   {% if page.css %}
     {% for css in page.css %}
-		<link rel="stylesheet" href="{{ css | relative_url }}">
+		<link rel="stylesheet4" href="{{ site.baseurl }}/{{ css }}">
     {% endfor %}
   {% endif %}
 
