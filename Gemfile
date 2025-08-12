@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
-group:development do
-      gem "appraisal"
+
 group:jekyll_plugins do
 	gem "beautiful-jekyll-theme"
 	gem "faraday-retry"
