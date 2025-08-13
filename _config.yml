@@ -14,7 +14,7 @@
 
 # Your name to show in the footer
   author: Rick Ritchie
-  baseurl: /_site
+  baseurl: https://rritchie-tech.github.io/beautiful-jekyll/_site
 ###############################################
 # --- List of links in the navigation bar --- #
 ###############################################
@@ -177,12 +177,12 @@
 #mobile-theme-col: "#0085A1"
 
 # For any extra visual customization, you can include additional CSS files in every page on your site. List any custom CSS files here
-  site.beautifuljekyll-navbar-css: "/assets/css/beautifuljekyll-navbar-css"
-  site.site-css: "/assets/css/custom-sytles.css"
-  title-image: "/assets/img/RedeemerSquare.gif"
+  site.beautifuljekyll-navbar-css: "{{ baseurl }}/assets/css/beautifuljekyll-navbar-css"
+  site.site-css: "{{ baseurl }}/assets/css/custom-sytles.css"
+  title-image: "{{ baseurl }}/assets/img/RedeemerSquare.gif"
 # If you have common JavaScript files that should be included in every page, list them here
   site-js:
-    "/assets/js/homebutton.js"
+    "{{ baseurl }}/assets/js/homebutton.js"
   
 #################################
 # --- Web Analytics Section --- #
