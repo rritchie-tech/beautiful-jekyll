@@ -1,0 +1,25 @@
+name: Tests
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  github-pages:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - uses: actions/cache@v4
+      with:
+        path: |
+          .asdf/**
+          vendor/bundle
+        key: ${{ runner.os }}-cache-${{ secrets.CACHE_VERSION }}-${{ hashFiles('**/cache.key') }}
+        restore-keys: |
+          ${{ runner.os }}-cache-
+    - uses: ./
+      with:
+        provider: 'github'
+        token: ${{ secrets.GITHUB_TOKEN }}
+        jekyll_src: './test_site'
