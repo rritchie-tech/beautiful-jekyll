@@ -88,23 +88,23 @@
     {% for css in layout.common-css %}
 	  {% if css contains "navbar" %}
       {% else %}
-		<link rel="stylesheet" href="{{ site.baseurl }}{{ css }}">
+		<link rel="stylesheet" href="{{ css }}">
 	  {% endif %}
     {% endfor %}
   {% endif %}
   {% if site.beautifuljekyll-navbar-css %}
     {% for css in site.beautifuljekyll-navbar-css %}
-		<link rel="stylesheet" href="{{ site.baseurl }}{{ css }}">
+		<link rel="stylesheet" href="{{ css }}">
     {% endfor %}
   {% endif %}
   {% if site.site-css %}
     {% for css in site.site-css %}
 		<p>css line from head.html</p>
-		<link rel="stylesheet" href="{{ site.baseurl }}{{ css }}">
+		<link rel="stylesheet" href="{{ css }}">
 		</p>end line</p>
 	{% endfor %}
   {% else %}
-		<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/custom-styles.css">
+		<link rel="stylesheet" href="assets/css/custom-styles.css">
   {% endif %}
   {% if page.ext-css %}
     {% for css in page.ext-css %}
