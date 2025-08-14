@@ -17,7 +17,7 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Build site (replace with your build command)
+      - name: Build Jekyll site
         run: |
           # Example for a Jekyll site:
           gem install jekyll bundler
