@@ -25,7 +25,3 @@ group:jekyll_plugins do
 	gem "unicode_utils"
 	gem "webrick"
 end
-<<<<<<< HEAD
-
-=======
->>>>>>> 3d21f5407676c2f01cebea9745918aca6025eee6
