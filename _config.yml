@@ -14,7 +14,7 @@
 
 # Your name to show in the footer
   author: Rick Ritchie
-  baseurl: "_site"
+  baseurl: ""
 ###############################################
 # --- List of links in the navigation bar --- #
 ###############################################
