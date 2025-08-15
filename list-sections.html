@@ -1,0 +1,123 @@
+{% comment %}
+    List directories which are in the current directory.
+    
+    The logic is: after removing the **common** part of the item's path,
+    we use an item if goes exactly **one** level down i.e. direct descendants.
+    Unfortunately Jekyll doesn't have a concept of directories, just pages in site.pages,
+    so here we use the presence of index.md to indicate that is the index of a directory.
+    This also makes sense to use this approach because Jekyll needs to actually have an HTML page
+    to reference as the directory menu.
+    Just make sure you have index.md in each directory and that it uses the listing layout.
+{% endcomment %}
+<style>
+ body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  height: 150px;
+  padding-left: 200px;
+  font-size: 11pt;
+  font-weight: bold;
+  font-color: blue;
+  overflow: hidden;
+  background-color: #DCDCDC;*/               /*GAINSBORO (GRAY)*/
+  /*background-image: url("/beautiful-jekyll/assets/img/Redeemer-Logo-Lamb.png");
+  background-repeat: no-repeat;        
+  /* this controls the text for the secondary dropdown items */
+}
+	
+.navbar a {
+  color: black;
+  text-align: center;
+  padding: 0;
+  text-decoration: none;
+}
+	
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn { 
+  font-size: 12pt;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  /* this controls the text for the primary dropdown titles */
+}
+
+.navbar a img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+	
+.navbar a:first-child {
+  padding: 25px, 25px, 25px, 25px;
+  background-color: #1E90FF; 'DODGER BLUE
+}
+	
+.navbar a:hover {
+  background-color: #1E90FF; 'DODGER BLUE
+}
+	
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #87CEFA; 'LIGHT SKY BLUE
+}
+
+.dropdown:hover .dropdown-content {
+  position: fixed;
+  display: block;
+  background-color: #87CEFA; 'LIGHT SKY BLUE
+  z-index: 0;
+}
+</style>
+<div class="navbar">
+	<a href="/beautiful-jekyll/level2/frontpage.md"><img src="/beautiful-jekyll/assets/img/RedeemerSquare.gif"></a>
+	{% for item in site.pages %}
+		{% if {{item.level}} == 1 %}
+		<div class="dropdown">
+			<button class="dropbtn">{{ item.title }}
+			  <i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content">
+				{% for item2 in site.pages %}
+					{% if {{item2.level}} == 2 %}
+						{% if item2.parent == item.title %}
+							<a href=/beautiful-jekyll/level2/{{item2.thisurl}}>{{item2.title}}</a>
+						{% endif %}
+					{% endif %}
+				{% endfor %}
+			</div>		  
+		</div>
+		{% endif %}
+	{% endfor %}
+</div>	
+<ul>
+    
+</ul>

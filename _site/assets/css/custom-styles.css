@@ -1,0 +1,479 @@
+*{
+  margin:0;
+  padding:0;
+}
+ 
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+body {
+	background-color: #00008B;
+}
+
+
+span {
+	border: 0;
+	margin: 0;
+	padding: 0;	
+}
+
+a {
+	border: 0;
+	margin: 0;
+	padding: 0;
+	text-decoration: none; /* Remove default underline */
+    border-bottom: 1px solid blue; /* Custom underline.  Good for text but not for my logo area.*/
+}
+
+main {
+	background-color: #00008B;
+}
+
+/* Adjust your main content margin */
+
+main {
+	margin-top: 110px; /* Adjust based on your navbar (Should this have been banner?) height */
+}
+
+#site-banner {
+	padding: 0 50px 0 50px;
+}
+
+#content_and_footer {
+	padding-top: 50px;
+}
+
+@media (min-width: 1200px) {
+	.intro-header .page-heading h1 {
+		color: blue;
+    }
+}
+
+#left-container {
+	position: relative;
+	left: 0px;
+	top: 25px;
+}
+
+#nav-left-1 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+#nav-left-1 a {
+	display: inline-block;
+    left: 0px;
+	background-color: transparent;
+}
+
+#nav-left-1 a img {
+	float: left;
+	top: 0px;
+}
+#nav-left-2 {
+	position: absolute;
+	top: 90px;
+	border: 0;
+	margin: 0;
+	padding: 10px 0 0 0;
+}
+
+/* Church Name */
+#nav-left-2 a {
+	position: absolute;
+	top: 0px;
+}
+#left-container {
+	width: 200px;
+	margin: 0 0 0 0;
+	padding: 0;
+}
+
+#nav-left-1 {
+	height: 70px;
+	width: 200px;
+}
+
+#nav-left-1 a {
+	width: 200px;
+	height: 110px;
+}
+
+#nav-left-1 a img {
+	
+}
+
+#nav-left-2 {
+	width: 200px;
+	border: 0;
+	margin: 0;
+	padding: 10px 0 0 0;
+}
+
+/* Church Name */
+#nav-left-2 a {
+	padding-top: 30px;
+	padding-left: 10px;
+}
+
+.highlight {
+	
+}
+/* ---   Sticky Mechanics    --- */
+
+#stuck-container {
+	position: static;
+	min-height: 100%;
+	overflow: clip;
+}
+
+#site-navbar {
+	position: sticky;
+	top: 0px;
+	right: 10px;
+	float: right;
+	z-index: 900;
+}
+
+#site-under-navbar {
+    position: sticky;
+	clear: both;
+	height: 20px;
+	z-index: 120;
+}
+
+/* --- End Sticky Mechanics  --- */
+
+/* --- Navbar Mechanics (Include mechanics here, styling below --- */
+/* Sticky and hidden allow the navbar to stop scrolling when it reaches the top. This works with site-navbar placed inside stuck-container, which has padding: 0 50px 0 50px;,position: static;, min-height: 100%;, and overflow: clip; */
+
+#nav-container {
+	position: relative;
+}
+
+#nav-container::after {
+	content: "";
+	display: table;
+	clear: both;	
+}
+
+/* 1. Dropdown Button */ 
+.dropbtn, .dropbtn-Home {
+	display: inline-block;
+	border: none;
+}
+
+/* 2. The container <div> -- needed to position the dropdown content */
+.dropdown {
+	position: relative;
+	display: inline-block;	
+	z-index: 999;
+}
+	
+/* 2b The container <div> just for the Home button */
+#dropdown-Home {
+	display: inline-block;	
+	opacity: 0;
+	z-index: 999;
+}
+
+/* 3. Dropdown Content (Hidden by Default) */	
+.dropdown-content {
+	display: none;
+	position: absolute;
+	left: -100px;
+	z-index: 1;
+	background-color: red; /* using color here just to see it. */
+}
+
+/* 4. Links inside the dropdown */
+.dropdown-content a {
+	display: block;
+	z-index: 1;
+}
+	
+/* 5. Change color of dropdown links on hover */
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+	
+/* 7. Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+}
+
+.dropdown-content:hover {
+	display: block;
+}
+.dropcown-content a:hover {
+
+}
+/* --- End Navbar Mechanics --- */
+
+/*   ---   Navbar Sizing   --- */
+
+#nav-container a {
+    border-bottom: none;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+#nav-container ul li {
+	height: 50px;
+}
+
+#nav-container::after {
+
+}
+
+
+
+/* 1. Dropdown Button */ 
+.dropbtn, .dropbtn-Home {
+	
+}
+
+.dropbtn {
+	padding: 50px 16px 0px 16px;
+}
+	
+.dropbtn-Home {
+	padding: 10px 16px 0px 16px;
+}
+
+/* 2. The container <div> -- needed to position the dropdown content */
+.dropdown {
+
+}
+	
+/* 2b The container <div> just for the Home button */
+#dropdown-Home {
+	width: 84px;
+}
+
+/* 2c */
+#dropdown-Home a {
+	width: 84px;
+}
+
+#dropdown-Home a img {
+	width: 34px;
+	padding: 0px;
+}
+
+#dropdown-Home li {
+	
+}
+
+/* 3. Dropdown Content (Hidden by Default) */	
+.dropdown-content {
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* 4. Links inside the dropdown */
+.dropdown-content a {
+	/*float: none;*/
+	width: 300px;
+	padding: 12px 26px;
+}
+	
+/* 5. Change color of dropdown links on hover */
+.dropdown:hover .dropdown-content {
+
+}
+	
+/* 7. Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+}
+
+.dropdown-content:hover {
+
+}
+
+/*   --- End Navbar Sizing --- */
+
+/* ---    Navbar Styling    --- */
+
+#site-navbar {
+	background-color: rgba(0, 0, 139, 0.75);
+	font-size: 11pt;
+	font-weight: bold;
+	color: white;
+}
+
+#site-navbar ul {
+
+}
+
+#site-under-navbar {
+	background-color: transparent;
+}
+
+#nav-container {
+}
+
+#nav-container a {
+}
+
+#nav-container ul li {
+	
+}
+
+#nav-container::after {
+	
+}
+
+#left-container {
+	
+}
+
+#nav-left-1 {
+	
+}
+
+#nav-left-1 a {
+	text-align: left;
+	background-color: transparent;
+}
+
+#nav-left-1 a img {
+	
+}
+
+#nav-left-2 {
+    font-size: 12px;
+}
+
+/* Church Name */
+#nav-left-2 a {
+	font-size: 8px;
+	color: #1E90FF;
+}
+
+.highlight {
+	
+}
+
+/* 1. Dropdown Button */ 
+.dropbtn, .dropbtn-Home {
+	color: white;
+	font-size: 16px;
+	background-color: #00008B;
+}
+
+.dropbtn {
+
+}
+	
+.dropbtn-Home {
+
+}
+
+/* 2. The container <div> -- needed to position the dropdown content */
+.dropdown {
+	background-color: rgba(0, 0, 0, 0);	
+}
+	
+/* 2b The container <div> just for the Home button */
+#dropdown-Home {
+	background-color: rgba(0, 0, 0, 0);	
+}
+
+/* 2c */
+#dropdown-Home a {
+
+}
+
+#dropdown-Home a img {
+
+}
+
+#dropdown-Home li {
+	text-decoration: none;
+}
+
+/* 3. Dropdown Content (Hidden by Default) */	
+.dropdown-content {
+	background-color: transparent;
+	/* background-color: #00008B; */
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* 4. Links inside the dropdown */
+.dropdown-content a {
+	/*float: none;*/
+	background-color: #00008B;
+	color: white;
+	text-decoration: none;
+	text-align: left;
+}
+	
+/* 5. Change color of dropdown links on hover */
+.dropdown:hover .dropdown-content {
+	background-color: transparent;
+	color: white;
+}
+	
+/* 7. Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+	background-color: rgba(0,0,0,0.2); 		
+}
+
+.dropdown-content:hover {
+	background-color: rgba(0,0,0,0.2);
+}
+/* ---  End Navbar Styling  --- */
+
+.page-subheading {
+	color: gainsboro;
+	font-size: 1rem;
+	font-style: italic;
+}
+
+
+
+ol c {
+	list-style-type: upper-roman;
+}
+
+h1 {
+	color: white;
+}
+
+
+h3 {
+	color: white; /* site.rick-h3 */
+}
+
+
+h2 {
+	color: white; /* site.rick-h2 */
+}
+
+
+
+p {
+	color: white; /* site.rick-p-col */
+}
+
+
+a:link,
+a:visited,
+a:hover
+a:active {
+	text-decoration: none;
+}
+
+.fixed-position {
+  position: fixed;
+  opacity: 1;
+  top: 0;
+  width: 100%;
+  border-width: 1px;
+  border-color: red;
+  border-style: solid;
+}

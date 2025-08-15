@@ -1,0 +1,12 @@
+    {
+      "team": [
+        {
+          "name": "Alice",
+          "role": "Designer"
+        },
+        {
+          "name": "Bob",
+          "role": "Developer"
+        }
+      ]
+    }

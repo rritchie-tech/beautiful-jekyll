@@ -1,0 +1,428 @@
+[ 
+ 
+{ 
+"title"    : "Paginator V2 Test", 
+"desc"     : "Paginator V2 Test", 
+"category" : "", 
+"url"      : "https://rritchie-tech.github.io/beautiful-jekyll/_site/2025/07/21/paginator-v2-test.html", 
+"date"     : "July 21, 2025" 
+}, 
+ 
+{ 
+"title"    : "Sample blog post to learn markdown tips", 
+"desc"     : "Sample blog post to learn markdown tips", 
+"category" : "test", 
+"url"      : "https://rritchie-tech.github.io/beautiful-jekyll/_site/2020/02/28/sample-markdown.html", 
+"date"     : "February 28, 2020" 
+}, 
+ 
+{ 
+"title"    : "Flake it till you make it", 
+"desc"     : "Flake it till you make it", 
+"category" : "books, test", 
+"url"      : "https://rritchie-tech.github.io/beautiful-jekyll/_site/2020/02/26/flake-it-till-you-make-it.html", 
+"date"     : "February 26, 2020" 
+}, 
+ 
+ 
+{ 
+"title"    : "Redeemer Lutheran Church of Huntington Beach", 
+"desc"     : "Redeemer Lutheran Church of Huntington Beach", 
+"category" : "page", 
+"url"      : "https://rritchie-tech.github.io/beautiful-jekyll/_site/RickExp1.html", 
+"date"     : "January 1, 1970" 
+}, 
+ 
+{ 
+"title"    : "About", 
+"desc"     : "About", 
+"category" : "test", 
+"url"      : "https://rritchie-tech.github.io/beautiful-jekyll/_site/level1/aboutL1.html", 
+"date"     : "January 1, 1970" 
+}, 
+ 
+{ 
+"title"    : "About Redeemer", 
+"desc"     : "About Redeemer", 
+"category" : "test", 
+"url"      : "https://rritchie-tech.github.io/beautiful-jekyll/_site/level2/aboutL2.html", 
+"date"     : "January 1, 1970" 
+}, 
+ 
+{ 
+"title"    : "About me", 
+"desc"     : "About me", 
+"category" : "page", 
+"url"      : "https://rritchie-tech.github.io/beautiful-jekyll/_site/aboutme.html", 
+"date"     : "January 1, 1970" 
+}, 
+ 
+{ 
+"title"    : "Adult Bible Studies", 
+"desc"     : "Adult Bible Studies", 
+"category" : "test", 
+"url"      : "https://rritchie-tech.github.io/beautiful-jekyll/_site/level2/adultbiblestudiesL2.html", 
+"date"     : "January 1, 1970" 
+}, 
+ 
+{ 
+"title"    : "Announcements", 
+"desc"     : "Announcements", 
+"category" : "test", 
+"url"      : "https://rritchie-tech.github.io/beautiful-jekyll/_site/level2/announcementsL2.html", 
+"date"     : "January 1, 1970" 
+}, 
+ 
+{ 
+"title"    : "Sermon and Lecture Archive", 
+"desc"     : "Sermon and Lecture Archive", 
+"category" : "test", 
+"url"      : "https://rritchie-tech.github.io/beautiful-jekyll/_site/level2/archiveL2.html", 
+"date"     : "January 1, 1970" 
+}, 
+ 
+{ 
+"title"    : "Articles", 
+"desc"     : "Articles", 
+"category" : "test", 
+"url"      : "https://rritchie-tech.github.io/beautiful-jekyll/_site/level2/articlesL2.html", 
+"date"     : "January 1, 1970" 
+}, 
+ 
+{ 
+"title"    : "Baptism", 
+"desc"     : "Baptism", 
+"category" : "test", 
+"url"      : "https://rritchie-tech.github.io/beautiful-jekyll/_site/level2/baptismL2.html", 
+"date"     : "January 1, 1970" 
+}, 
+ 
+{ 
+"title"    : "Boards", 
+"desc"     : "Boards", 
+"category" : "test", 
+"url"      : "https://rritchie-tech.github.io/beautiful-jekyll/_site/level2/boardsL2.html", 
+"date"     : "January 1, 1970" 
+}, 
+ 
+{ 
+"title"    : "Calendar", 
+"desc"     : "Calendar", 
+"category" : "test", 
+"url"      : "https://rritchie-tech.github.io/beautiful-jekyll/_site/level2/calendarL2.html", 
+"date"     : "January 1, 1970" 
+}, 
+ 
+{ 
+"title"    : "", 
+"desc"     : "", 
+"category" : "page", 
+"url"      : "https://rritchie-tech.github.io/beautiful-jekyll/_site/compress.html", 
+"date"     : "January 1, 1970" 
+}, 
+ 
+{ 
+"title"    : "Devotionals", 
+"desc"     : "Devotionals", 
+"category" : "test", 
+"url"      : "https://rritchie-tech.github.io/beautiful-jekyll/_site/level2/devotionalsL2.html", 
+"date"     : "January 1, 1970" 
+}, 
+ 
+{ 
+"title"    : "Donate", 
+"desc"     : "Donate", 
+"category" : "test", 
+"url"      : "https://rritchie-tech.github.io/beautiful-jekyll/_site/level1/donateL1.html", 
+"date"     : "January 1, 1970" 
+}, 
+ 
+{ 
+"title"    : "Education", 
+"desc"     : "Education", 
+"category" : "test", 
+"url"      : "https://rritchie-tech.github.io/beautiful-jekyll/_site/level1/educationL1.html", 
+"date"     : "January 1, 1970" 
+}, 
+ 
+{ 
+"title"    : "Engage", 
+"desc"     : "Engage", 
+"category" : "test", 
+"url"      : "https://rritchie-tech.github.io/beautiful-jekyll/_site/level1/engageL1.html", 
+"date"     : "January 1, 1970" 
+}, 
+ 
+{ 
+"title"    : "Events", 
+"desc"     : "Events", 
+"category" : "test", 
+"url"      : "https://rritchie-tech.github.io/beautiful-jekyll/_site/level1/eventsL1.html", 
+"date"     : "January 1, 1970" 
+}, 
+ 
+{ 
+"title"    : "Front Page", 
+"desc"     : "Front Page", 
+"category" : "test", 
+"url"      : "https://rritchie-tech.github.io/beautiful-jekyll/_site/frontpage.html", 
+"date"     : "January 1, 1970" 
+}, 
+ 
+{ 
+"title"    : "Front Page", 
+"desc"     : "Front Page", 
+"category" : "test", 
+"url"      : "https://rritchie-tech.github.io/beautiful-jekyll/_site/level2/frontpageL2.html", 
+"date"     : "January 1, 1970" 
+}, 
+ 
+{ 
+"title"    : "Game Night", 
+"desc"     : "Game Night", 
+"category" : "test", 
+"url"      : "https://rritchie-tech.github.io/beautiful-jekyll/_site/level2/gamenightL2.html", 
+"date"     : "January 1, 1970" 
+}, 
+ 
+{ 
+"title"    : "Online Giving", 
+"desc"     : "Online Giving", 
+"category" : "test", 
+"url"      : "https://rritchie-tech.github.io/beautiful-jekyll/_site/givingL2.html", 
+"date"     : "January 1, 1970" 
+}, 
+ 
+{ 
+"title"    : "Online Giving", 
+"desc"     : "Online Giving", 
+"category" : "test", 
+"url"      : "https://rritchie-tech.github.io/beautiful-jekyll/_site/level2/givingL2.html", 
+"date"     : "January 1, 1970" 
+}, 
+ 
+{ 
+"title"    : "Community Service Groups", 
+"desc"     : "Community Service Groups", 
+"category" : "test", 
+"url"      : "https://rritchie-tech.github.io/beautiful-jekyll/_site/level2/groupsL2.html", 
+"date"     : "January 1, 1970" 
+}, 
+ 
+{ 
+"title"    : "", 
+"desc"     : "", 
+"category" : "page", 
+"url"      : "https://rritchie-tech.github.io/beautiful-jekyll/_site/header.html", 
+"date"     : "January 1, 1970" 
+}, 
+ 
+{ 
+"title"    : "My website", 
+"desc"     : "My website", 
+"category" : "page", 
+"url"      : "https://rritchie-tech.github.io/beautiful-jekyll/_site/", 
+"date"     : "January 1, 1970" 
+}, 
+ 
+{ 
+"title"    : "About Redeemer	Redo", 
+"desc"     : "About Redeemer	Redo", 
+"category" : "test", 
+"url"      : "https://rritchie-tech.github.io/beautiful-jekyll/_site/assets/", 
+"date"     : "January 1, 1970" 
+}, 
+ 
+{ 
+"title"    : "Events", 
+"desc"     : "Events", 
+"category" : "test", 
+"url"      : "https://rritchie-tech.github.io/beautiful-jekyll/_site/level1/indexL1.html", 
+"date"     : "January 1, 1970" 
+}, 
+ 
+{ 
+"title"    : "Law and Gospel Lessons", 
+"desc"     : "Law and Gospel Lessons", 
+"category" : "test", 
+"url"      : "https://rritchie-tech.github.io/beautiful-jekyll/_site/level2/lawandgospelL2.html", 
+"date"     : "January 1, 1970" 
+}, 
+ 
+{ 
+"title"    : "Recommended Links", 
+"desc"     : "Recommended Links", 
+"category" : "test", 
+"url"      : "https://rritchie-tech.github.io/beautiful-jekyll/_site/level2/linksL2.html", 
+"date"     : "January 1, 1970" 
+}, 
+ 
+{ 
+"title"    : "Lutheran Women Missionaries League", 
+"desc"     : "Lutheran Women Missionaries League", 
+"category" : "test", 
+"url"      : "https://rritchie-tech.github.io/beautiful-jekyll/_site/level2/lwmlL2.html", 
+"date"     : "January 1, 1970" 
+}, 
+ 
+{ 
+"title"    : "Music", 
+"desc"     : "Music", 
+"category" : "test", 
+"url"      : "https://rritchie-tech.github.io/beautiful-jekyll/_site/level2/musicL2.html", 
+"date"     : "January 1, 1970" 
+}, 
+ 
+{ 
+"title"    : "Volunteer Service Opportunities", 
+"desc"     : "Volunteer Service Opportunities", 
+"category" : "test", 
+"url"      : "https://rritchie-tech.github.io/beautiful-jekyll/_site/level2/opportunitiesL2.html", 
+"date"     : "January 1, 1970" 
+}, 
+ 
+{ 
+"title"    : "Prayer Requests", 
+"desc"     : "Prayer Requests", 
+"category" : "test", 
+"url"      : "https://rritchie-tech.github.io/beautiful-jekyll/_site/prayerL2.html", 
+"date"     : "January 1, 1970" 
+}, 
+ 
+{ 
+"title"    : "Prayer Requests", 
+"desc"     : "Prayer Requests", 
+"category" : "test", 
+"url"      : "https://rritchie-tech.github.io/beautiful-jekyll/_site/level2/prayerL2.html", 
+"date"     : "January 1, 1970" 
+}, 
+ 
+{ 
+"title"    : "Preschool", 
+"desc"     : "Preschool", 
+"category" : "test", 
+"url"      : "https://rritchie-tech.github.io/beautiful-jekyll/_site/level1/preschoolL1.html", 
+"date"     : "January 1, 1970" 
+}, 
+ 
+{ 
+"title"    : "Recommended Reading", 
+"desc"     : "Recommended Reading", 
+"category" : "test", 
+"url"      : "https://rritchie-tech.github.io/beautiful-jekyll/_site/level2/readingL2.html", 
+"date"     : "January 1, 1970" 
+}, 
+ 
+{ 
+"title"    : "Redeemer News", 
+"desc"     : "Redeemer News", 
+"category" : "test", 
+"url"      : "https://rritchie-tech.github.io/beautiful-jekyll/_site/level2/redeemernewsL2.html", 
+"date"     : "January 1, 1970" 
+}, 
+ 
+{ 
+"title"    : "Resources", 
+"desc"     : "Resources", 
+"category" : "test", 
+"url"      : "https://rritchie-tech.github.io/beautiful-jekyll/_site/level1/resourcesL1.html", 
+"date"     : "January 1, 1970" 
+}, 
+ 
+{ 
+"title"    : "Sanctity of Life", 
+"desc"     : "Sanctity of Life", 
+"category" : "test", 
+"url"      : "https://rritchie-tech.github.io/beautiful-jekyll/_site/level2/sanctityL2.html", 
+"date"     : "January 1, 1970" 
+}, 
+ 
+{ 
+"title"    : "Sermons", 
+"desc"     : "Sermons", 
+"category" : "test", 
+"url"      : "https://rritchie-tech.github.io/beautiful-jekyll/_site/level2/sermonsL2.html", 
+"date"     : "January 1, 1970" 
+}, 
+ 
+{ 
+"title"    : "Online Services", 
+"desc"     : "Online Services", 
+"category" : "test", 
+"url"      : "https://rritchie-tech.github.io/beautiful-jekyll/_site/level1/servicesL1.html", 
+"date"     : "January 1, 1970" 
+}, 
+ 
+{ 
+"title"    : "Worship Services", 
+"desc"     : "Worship Services", 
+"category" : "test", 
+"url"      : "https://rritchie-tech.github.io/beautiful-jekyll/_site/level2/servicesL2.html", 
+"date"     : "January 1, 1970" 
+}, 
+ 
+{ 
+"title"    : "Articles", 
+"desc"     : "Articles", 
+"category" : "test", 
+"url"      : "https://rritchie-tech.github.io/beautiful-jekyll/_site/level2/smallcatechismL2.html", 
+"date"     : "January 1, 1970" 
+}, 
+ 
+{ 
+"title"    : "Sunday School", 
+"desc"     : "Sunday School", 
+"category" : "test", 
+"url"      : "https://rritchie-tech.github.io/beautiful-jekyll/_site/level2/sundayschoolL2.html", 
+"date"     : "January 1, 1970" 
+}, 
+ 
+{ 
+"title"    : "Tag Index", 
+"desc"     : "Tag Index", 
+"category" : "page", 
+"url"      : "https://rritchie-tech.github.io/beautiful-jekyll/_site/tags.html", 
+"date"     : "January 1, 1970" 
+}, 
+ 
+{ 
+"title"    : "Upcoming Events", 
+"desc"     : "Upcoming Events", 
+"category" : "test", 
+"url"      : "https://rritchie-tech.github.io/beautiful-jekyll/_site/level2/upcomingeventsL2.html", 
+"date"     : "January 1, 1970" 
+}, 
+ 
+{ 
+"title"    : "Boards", 
+"desc"     : "Boards", 
+"category" : "test", 
+"url"      : "https://rritchie-tech.github.io/beautiful-jekyll/_site/level2/vbs2025L2.html", 
+"date"     : "January 1, 1970" 
+}, 
+ 
+{ 
+"title"    : "Video Services", 
+"desc"     : "Video Services", 
+"category" : "test", 
+"url"      : "https://rritchie-tech.github.io/beautiful-jekyll/_site/level2/videoL2.html", 
+"date"     : "January 1, 1970" 
+}, 
+ 
+{ 
+"title"    : "YAML test", 
+"desc"     : "YAML test", 
+"category" : "test", 
+"url"      : "https://rritchie-tech.github.io/beautiful-jekyll/_site/level2/yamlL2.html", 
+"date"     : "January 1, 1970" 
+}, 
+ 
+{ 
+"title"    : "Youth Studies", 
+"desc"     : "Youth Studies", 
+"category" : "test", 
+"url"      : "https://rritchie-tech.github.io/beautiful-jekyll/_site/level2/youthstudiesL2.html", 
+"date"     : "January 1, 1970" 
+} 
+ 
+]

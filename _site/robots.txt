@@ -1,0 +1,1 @@
+Sitemap: http://localhost:4000/https://rritchie-tech.github.io/beautiful-jekyll/_site/sitemap.xml

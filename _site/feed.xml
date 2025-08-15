@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    
+    <title>Redeemer Lutheran Church of Huntington Beach</title>
+    
+    
+    <description>This website is a virtual proof that I&apos;m awesome</description>
+    
+    <link>http://localhost:4000/https://rritchie-tech.github.io/beautiful-jekyll/_site/</link>
+    <atom:link href="http://localhost:4000/https://rritchie-tech.github.io/beautiful-jekyll/_site/feed.xml" rel="self" type="application/rss+xml" />
+    
+    
+      <item>
+        <title>Paginator V2 Test</title>
+        
+        <dc:creator><![CDATA[ Rick Ritchie ]]></dc:creator>
+        
+        <description>
+          
+          Posts &amp;lt;!DOCTYPE html&amp;gt; This is the new head. Sample blog post to learn markdown tips | Redeemer Lutheran Church of Huntington Beach This is my banner. Isn&apos;t it awesome? &amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt; HEAD ======= &amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt; 3d21f5407676c2f01cebea9745918aca6025eee6 &amp;lt;/img&amp;gt; Home About About Redeemer Baptism Worship Services Education Adult Bible Studies Sunday School Youth Studies...
+        </description>
+        <pubDate>Mon, 21 Jul 2025 00:00:00 -0700</pubDate>
+        <link>http://localhost:4000/https://rritchie-tech.github.io/beautiful-jekyll/_site/2025/07/21/paginator-v2-test.html</link>
+        <guid isPermaLink="true">http://localhost:4000/https://rritchie-tech.github.io/beautiful-jekyll/_site/2025/07/21/paginator-v2-test.html</guid>
+      </item>
+    
+      <item>
+        <title>Sample blog post to learn markdown tips</title>
+        
+        <dc:creator><![CDATA[ Bill Smith ]]></dc:creator>
+        
+        <description>
+          There&apos;s lots to learn! - 
+          This is a demo post to show you how to write blog posts with markdown. I strongly encourage you to take 5 minutes to learn how to write in markdown - it’ll teach you how to transform regular text into bold/italics/tables/etc.I also encourage you to look at the code that...
+        </description>
+        <pubDate>Fri, 28 Feb 2020 00:00:00 -0800</pubDate>
+        <link>http://localhost:4000/https://rritchie-tech.github.io/beautiful-jekyll/_site/2020/02/28/sample-markdown.html</link>
+        <guid isPermaLink="true">http://localhost:4000/https://rritchie-tech.github.io/beautiful-jekyll/_site/2020/02/28/sample-markdown.html</guid>
+      </item>
+    
+      <item>
+        <title>Flake it till you make it</title>
+        
+        <dc:creator><![CDATA[ Sharon Smith and Barry Simpson ]]></dc:creator>
+        
+        <description>
+          Excerpt from Soulshaping by Jeff Brown - 
+          Under what circumstances should we step off a path? When is it essential that we finish what we start? If I bought a bag of peanuts and had an allergic reaction, no one would fault me if I threw it out. If I ended a relationship with a woman who...
+        </description>
+        <pubDate>Wed, 26 Feb 2020 00:00:00 -0800</pubDate>
+        <link>http://localhost:4000/https://rritchie-tech.github.io/beautiful-jekyll/_site/2020/02/26/flake-it-till-you-make-it.html</link>
+        <guid isPermaLink="true">http://localhost:4000/https://rritchie-tech.github.io/beautiful-jekyll/_site/2020/02/26/flake-it-till-you-make-it.html</guid>
+      </item>
+    
+  </channel>
+</rss>
