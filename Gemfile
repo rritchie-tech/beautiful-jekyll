@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem "jekyll", "~> 4.4"
+
 group:jekyll_plugins do
 	gem "appraisal"
 	gem "beautiful-jekyll-theme"
@@ -7,11 +9,10 @@ group:jekyll_plugins do
 	gem "fiddle"
     gem "htmlcompressor"
 	gem "htmlbeautifier"
-    gem "jekyll"
     gem "jekyll-archives"
 	gem "jekyll-data"
     gem "jekyll-diagrams"
-	gem "jekyll-feed"
+	gem "jekyll-feed", "~> 0.17"
 	gem "jekyll-github-metadata"
 	gem "jekyll-imagemagick"
 	gem "jekyll-scholar"
