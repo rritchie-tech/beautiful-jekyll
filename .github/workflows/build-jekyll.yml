@@ -27,7 +27,7 @@ jobs:
           bundle install
 
       - name: Build Jekyll Site
-        run: bundle exec jekyll build --trace
+        run: bundle exec jekyll build --trace --incremental
 
       - name: Upload built site as artifact (optional)
         uses: actions/upload-artifact@v4
